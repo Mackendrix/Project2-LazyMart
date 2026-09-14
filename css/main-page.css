@@ -110,6 +110,10 @@ li a{
     height: 75vh;
     position: absolute;
     bottom: 0;
+    transition: all 0.5s linear;
+}
+.me:hover{
+    transform: scale(1.1)
 }
 .message-container .message{
     padding: 3rem;
@@ -136,4 +140,65 @@ li a{
 }
 .message p{
     margin-bottom: 20px;
+}
+
+/* Categories */
+.categories{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    margin: 3px;
+}
+.categories .category{
+    /* border: 1px solid black; */
+    width: 200px;
+    border-radius: 10px;
+    transition: all 0.2s linear;
+    box-shadow: 5px 5px 5px ;
+}
+.categories .category:hover{
+    transform: perspective(1000px) rotateY(10deg);
+    transform-style: preserve-3d;
+}
+.Clothes{
+    background: url(../images/clothes-cutout.png);
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    background-size: contain;
+    background-color: #333333;
+}
+.Shoes{
+    background: url(../images/Shoes_edited.png);
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    background-size: contain;
+    background-color: #E4DCBD;
+}
+.Phones{
+    background: url(../images/phones_edited.png);
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    background-size: contain;
+    background-color: #364640;
+}
+.Laptops{
+    background: url(../images/Laptops_edited.png);
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    background-size: contain;
+    background-color: #5B9EBC;
+}
+.Gadgets{
+    background: url(../images/Gadgets-cutout.png);
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    background-size: contain;
+    background-color: #7C1615;
+}
+.category a{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
