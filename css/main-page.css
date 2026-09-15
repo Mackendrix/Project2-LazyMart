@@ -38,7 +38,26 @@ body{
     align-items: center;
     font-size: 20px;
 }
-
+#search-results{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 10;
+}
+.search-result{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+}
+.search-results:hover{
+    background-color: #eee;
+}
 /* personal bar */
 .personal{
     /* border: 1px solid black; */
